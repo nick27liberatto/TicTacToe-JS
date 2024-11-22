@@ -227,13 +227,11 @@ function checkWinner() {
     // vertical win
     for(i=0;i<3;i++){
         //v = vertical
-        vCheckCollumnsOne = [rowOne[i], rowTwo[i], rowThree[i]]
-        vCheckCollumnsTwo = [rowOne[i], rowTwo[i], rowThree[i]]
-        vCheckCollumnsThree =[rowOne[i], rowTwo[i], rowThree[i]]
+        vCheckCollumns = [rowOne[i], rowTwo[i], rowThree[i]]
     
-        EmptyVertical = vCheckCollumnsOne.includes(Empty)
-        xVertical = vCheckCollumnsTwo.includes(X)
-        oVertical = vCheckCollumnsThree.includes(O)
+        EmptyVertical = vCheckCollumns.includes(Empty)
+        xVertical = vCheckCollumns.includes(X)
+        oVertical = vCheckCollumns.includes(O)
     
         if((!oVertical)&&(!EmptyVertical)){
             console.log("X Won")
