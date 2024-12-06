@@ -136,7 +136,7 @@ function getPos(){
         checkPos()
     }
 
-//check coordinates on the 2d array to append the correct symbol
+//check coordinates on the array to append the correct symbol
 function checkPos() {
     //row one
     for(i=0;i<3;i++){
